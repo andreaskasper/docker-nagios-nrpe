@@ -21,8 +21,11 @@ docker run -d --rm --privileged \
 | Parameter     | Description   |
 | ------------- |:-------------:|
 | ALLOWED_HOSTS | which IPs are allowed to access the RTMP |
+| INSTALL_PHP   | install php-cli to use for scripts |
 
 #### Folders:
-* /etc/nagios/nrpe.d
-* /etc/nagios-plugins/config/custom
-* /usr/lib/nagios/plugins/custom
+| Folder        | Description   |
+| ------------- |:-------------:|
+| /etc/nagios/nrpe.d | additional .cfg files for nagios-nrpe   |
+| /etc/nagios-plugins/config/custom | additional custom configurations |
+| /usr/lib/nagios/plugins/custom | additional plugin-scripts for your nagios |
