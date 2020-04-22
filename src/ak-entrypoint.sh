@@ -2,4 +2,11 @@
 
 echo $BIND
 
-./nrpe-entrypoint.sh $@
+#./nrpe-entrypoint.sh $@
+
+if [ "$1" = 'nrpe' ]; then
+    service nagios-nrpe-server start
+    sleep infinity
+else
+   exec "$@"
+fi
