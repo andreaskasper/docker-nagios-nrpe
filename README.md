@@ -20,7 +20,7 @@ docker run -d --rm --privileged \
 #### Environment Parameters
 | Parameter     | Description   |
 | ------------- |:-------------:|
-| BIND          | which IPs are allowed to access the RTMP |
+| ALLOWED_HOSTS | which IPs are allowed to access the RTMP |
 
 #### Folders:
 * /etc/nagios/nrpe.d
