@@ -8,7 +8,8 @@ echo "allowed_hosts=$ALLOWED_HOSTS" > /etc/nagios/nrpe_local.cfg
 
 if [ "$INSTALL_PHP" = '1' ]; then
     apt-get update
-    apt-get install php-cli
+    apt-get install -y php-cli
+    apt-get clean
 fi
 
 if [ "$1" = 'nrpe' ]; then
